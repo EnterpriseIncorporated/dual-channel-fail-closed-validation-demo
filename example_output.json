@@ -2,27 +2,29 @@
   "demo_timestamp": "2026-04-12T04:11:00Z",
   "system_version": "demo-only-v1",
 
-  "consensus_mode": "DUAL_CHANNEL_REQUIRED",
+  "validation_mode": "DUAL_CHANNEL_REQUIRED",
   "execution_policy": "FAIL_CLOSED",
-  "consensus_status": "CONSENSUS_REACHED",
+  "validation_status": "VALIDATION_APPROVED",
 
   "channels": {
     "channel_a": {
       "input_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "status": "RECEIVED"
+      "status": "VALIDATED"
     },
     "channel_b": {
       "input_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "status": "RECEIVED"
+      "status": "VALIDATED"
     }
   },
 
   "evidence_bundle": {
     "bundle_id": "demo-bundle-001",
-    "evidence_hash": "0f343b0931126a20f133d67c2b018a3b5b6f0e4c0b9a9a9e1b8e6a2c3d4f5e6a",
-    "verification": "VERIFIED",
+    "evidence_hash": "hash_of_channel_inputs_demo",
+    "verification": "VALIDATION_CONFIRMED",
     "linked_channels": ["channel_a", "channel_b"]
   },
 
-  "note": "This output is for demonstration purposes only and does not represent production enforcement, cryptographic validation, or consensus logic."
+  "enforcement_result": "ALLOW",
+
+  "note": "This output demonstrates a validation-approved scenario under a fail-closed policy. It represents high-level system behavior only and does not include production enforcement logic or cryptographic mechanisms."
 }
