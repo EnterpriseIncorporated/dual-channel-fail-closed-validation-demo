@@ -1,0 +1,31 @@
+{
+  "demo_timestamp": "2026-04-12T04:13:00Z",
+  "system_version": "demo-only-v1",
+
+  "consensus_mode": "DUAL_CHANNEL_REQUIRED",
+  "execution_policy": "FAIL_CLOSED",
+  "consensus_status": "CONSENSUS_DENIED",
+
+  "channels": {
+    "channel_a": {
+      "input_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "VALIDATED"
+    },
+    "channel_b": {
+      "input_hash": "7f83b1657ff1fc53b92dc18148a1d65dfa135f8a1f5f8c3d5f8e6a2c3d4f5e6a",
+      "status": "VALIDATED"
+    }
+  },
+
+  "evidence_bundle": {
+    "bundle_id": "demo-bundle-002",
+    "evidence_hash": "4a44dc15364204a80fe80e9039455cc1608281820e5c8e8f7f8e6a2c3d4f5e6a",
+    "verification": "CONSENSUS_FAILED",
+    "linked_channels": ["channel_a", "channel_b"],
+    "mismatch_detected": true
+  },
+
+  "enforcement_result": "DENY",
+
+  "note": "This output demonstrates a fail-closed denial scenario triggered by channel mismatch. It does not represent production enforcement, cryptographic validation, or consensus logic."
+}
