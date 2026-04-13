@@ -25,7 +25,7 @@
     "mismatch_detected": true
   },
 
-  "enforcement_result": "DENY",
+  "decision": "DENY",
 
-  "note": "This output demonstrates a fail-closed denial scenario triggered by a validation mismatch. It represents high-level system behavior only and does not include production enforcement logic or cryptographic mechanisms."
+  "note": "This output demonstrates a fail-closed denial scenario triggered by a validation mismatch. It represents high-level system behavior only and does not include production validation or execution control logic or cryptographic mechanisms."
 }
