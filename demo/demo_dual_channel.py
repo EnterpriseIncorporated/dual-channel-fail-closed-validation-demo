@@ -2,10 +2,10 @@
 DEMO ONLY - NOT THE REAL SYSTEM
 --------------------------------
 This is a simplified demonstration of selected concepts from a
-dual-channel fail-closed enforcement architecture.
+dual-channel fail-closed validation model.
 
 It does NOT contain:
-- production enforcement logic
+- production validation or execution control logic
 - cryptographic mechanisms
 - continuous validation internals
 - private implementation details
@@ -13,7 +13,6 @@ It does NOT contain:
 
 This file is provided for public demonstration purposes only.
 """
-
 import json
 from datetime import datetime
 
