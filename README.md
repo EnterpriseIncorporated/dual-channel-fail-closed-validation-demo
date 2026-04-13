@@ -1,38 +1,51 @@
 System Overview
 
-This repository provides a demonstration of a dual-channel fail-closed validation model for high-assurance environments.
+This repository presents a controlled demonstration of a dual-channel fail-closed validation model designed for high-assurance and security-critical environments.
 
-It illustrates how multiple independent validation paths can be required before a decision is produced, with a default fail-closed posture when agreement is not achieved.
+The model illustrates how multiple independent validation paths must align before a decision is permitted, with a strict fail-closed default posture when agreement is not achieved.
 
-The repository presents a representation of system behavior and output structure only and does not include production validation logic, execution control mechanisms, full cryptographic workflows, or operational deployment components.
+This repository is intentionally limited to representational system behavior and output structure. It does not include production validation logic, execution control mechanisms, cryptographic workflows, or operational deployment components.
 
 ---
 
 Demo Outputs
 
-The public demonstration of the system is located in the demo/ directory.
+The public demonstration is located in the demo/ directory.
 
-It contains two representative outputs illustrating the dual-channel validation model:
+It includes two representative outputs illustrating dual-channel validation behavior:
 
 - example_output.json — PASS scenario (validation agreement achieved)
 - fail_output.json — FAIL-CLOSED scenario (validation mismatch detected)
 
-For a walkthrough of how these outputs relate to the system’s conceptual behavior, see demo_run.md.
+For a structured walkthrough, see demo_run.md.
 
-These files demonstrate high-level system behavior only and do not expose implementation details, production logic, or sensitive components.
+These artifacts demonstrate high-level validation behavior only and do not expose implementation details, internal logic, or sensitive system components.
+
+---
+
+System Positioning
+
+The architecture represented in this repository reflects a validation-first control model applicable to:
+
+- high-assurance execution environments
+- AI decision validation and governance
+- security-critical system validation layers
+- multi-path verification and trust models
+
+This repository serves as a boundary-layer demonstration and does not represent the full system.
 
 ---
 
 Intellectual Property Notice
 
-This repository provides a demonstration-only representation of selected concepts from a dual-channel fail-closed validation model.
+This repository contains a demonstration-only representation of selected concepts from a dual-channel fail-closed validation system.
 
-It omits production-grade components, including:
+It intentionally excludes production-grade components, including:
 
 - validation and execution control logic
-- cryptographic mechanisms
-- continuous validation internals
-- private implementation details
+- cryptographic mechanisms and key management
+- continuous validation and monitoring internals
+- private implementation and orchestration layers
 
 The underlying system is protected under filed and pending patent applications in Australia.
 
@@ -55,6 +68,14 @@ It does not grant any rights to:
 
 ---
 
+Access and Commercial Use
+
+Access to full system capabilities, including validation control layers and execution governance mechanisms, is restricted.
+
+Commercial use, licensing, and enterprise evaluation are available only under controlled agreement.
+
+---
+
 Copyright
 
 © 2025–2026 Michael Phillip Peters. All rights reserved.
@@ -63,8 +84,8 @@ Copyright
 
 Contact
 
-For licensing, pilot programs, or enterprise evaluation access, please contact:
+For licensing, pilot programs, or enterprise evaluation access:
 
-Michael Phillip Peters
-Enterprise Corporated
+Michael Phillip Peters  
+Enterprise Corporated  
 security@enterprisecorporated.com
