@@ -24,7 +24,7 @@
     "linked_channels": ["channel_a", "channel_b"]
   },
 
-  "enforcement_result": "ALLOW",
+  "decision": "ALLOW",
 
-  "note": "This output demonstrates a validation-approved scenario under a fail-closed policy. It represents high-level system behavior only and does not include production enforcement logic or cryptographic mechanisms."
+  "note": "This output demonstrates a validation-approved scenario under a fail-closed policy. It represents high-level system behavior only and does not include production validation or execution control logic or cryptographic mechanisms."
 }
